@@ -11,12 +11,197 @@
 
 <body>
 
+  <!-- Хедер -->
+  <header class="header">
+
+    <!-- Навигация -->
+    <nav class="header__nav main-nav navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="main-nav__logo navbar-brand mr-a">
+          <img class="main-nav__logo-img" src="img/svg/logo.svg" alt="Ничотак" width="50" height="44">
+        </a>
+
+        <button class="main-nav__toggler navbar-toggler border-0" type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="main-nav__toggler-icon navbar-toggler-icon"></span>
+        </button>
+
+        <div class="main-nav__info collapse navbar-collapse flex-column-reverse align-items-end" id="navbarNav">
+          <ul class="main-nav__list navbar-nav">
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link" href="#">Раздел 1</span></a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link" href="#">Раздел 2</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link" href="#">Раздел 3</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link" href="#">Раздел 4</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link" href="#">О нас</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__contacts navbar-nav d-none d-md-flex">
+            <a class="main-nav__contacts-link nav-link" href="#"><span class="sr-only">Вконтакте</span></a>
+            <a class="main-nav__contacts-link nav-link" href="#"><span class="sr-only">Инстаграм</span></a>
+            <a class="main-nav__contacts-link nav-link" href="#"><span class="sr-only">Пинтерест</span></a>
+            <a class="main-nav__contacts-link nav-link" href="tel:84950000000"><span
+                class="text-primary font-weight-bold">Телефон</span> +7 495 000-0000</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Слайдер -->
+    <div id="controls" class="header__slider slider carousel slide" data-ride="carousel">
+      <div class="slider-wrapper carousel-inner text-center">
+        <div class="slider__slide slide carousel-item active">
+          <img class="slide__img d-block w-100" src="#" alt="Первый слайд">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="slide__heading">Название слайда</h2>
+            <p class="slide__desc">Описание слайда</p>
+          </div>
+        </div>
+        <div class="slider__slide slide carousel-item">
+          <img class="slide__img d-block w-100" src="#" alt="Второй слайд">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="slide__heading">Название слайда</h2>
+            <p class="slide__desc">Описание слайда</p>
+          </div>
+        </div>
+        <div class="slider__slide slide carousel-item">
+          <img class="slide__img d-block w-100" src="#" alt="Третий слайд">
+          <div class="slide__info carousel-caption d-none d-md-block">
+            <h2 class="slide__heading">Название слайда</h2>
+            <p class="slide__desc">Описание слайда</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#controls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Заголовок h1 -->
+    <h1 class="heading sr-only">Ничотак</h1>
+
+    <!-- Портфолио -->
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="portfolio__heading heading-decor col-12 text-center">Портфолио</h2>
+
+        <!-- Особенности портфолио -->
+        <div class="portfolio__feature row text-center">
+          <div class="portfolio__feature-text col-12 col-md-4">Не просто делаем красивые снимки. За каждой нашей
+            фотографией история</div>
+          <div class="portfolio__feature-text col-12 col-md-4">Работаем с моделями, визажистами и стилистами на
+            TFP-условиях с возможностью дальнейшего сотрудничества</div>
+          <div class="portfolio__feature-text col-12 col-md-4">Предлагаем профессиональную ретушь ваших фото,
+            восстановление старых снимков, реколор черно-белых изображений</div>
+        </div>
+      </div>
+
+      <!-- Разделы портфолио -->
+      <div class="portfolio__list">
+        <div class="portfolio__list-wrapper row no-gutters">
+          <div class="portfolio__item col-12 col-sm-6 col-md-3">
+            <h3 class="portfolio__item-heading">Раздел 1</h3>
+            <p class="portfolio__item-desc"></p>
+          </div>
+          <div class="portfolio__item col-12 col-sm-6 col-md-3">
+            <h3 class="portfolio__item-heading">Раздел 2</h3>
+            <p class="portfolio__item-desc"></p>
+          </div>
+          <div class="portfolio__item col-12 col-sm-6 col-md-3">
+            <h3 class="portfolio__item-heading">Раздел 3</h3>
+            <p class="portfolio__item-desc"></p>
+          </div>
+          <div class="portfolio__item col-12 col-sm-6 col-md-3">
+            <h3 class="portfolio__item-heading">Раздел 4</h3>
+            <p class="portfolio__item-desc"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="feedback bg-secondary">
+      <h2 class="feedback__heading heading-decor text-center">Свяжитесь с нами</h2>
+
+      <form class="feedback__form form container" action="#">
+        <div class="form__item form-group">
+          <label for="inputTel">Имя *</label>
+          <input class="form-control" id="inputTel" type="text" required>
+        </div>
+        <div class="form-row">
+          <div class="form__item form-group col-12 col-sm-6">
+            <label for="inputEmail">E-mail *</label>
+            <input class="form-control" id="inputEmail" type="mail" required>
+          </div>
+          <div class="form__item form-group col-12 col-sm-6">
+            <label for="inputTel">Телефон</label>
+            <input class="form-control" id="inputTel" type="tel">
+          </div>
+        </div>
+        <div class="form__item form-group">
+          <label for="feedbackTextarea">Example textarea</label>
+          <textarea class="form-control" id="feedbackTextarea" rows="4" required></textarea>
+        </div>
+        <button class="form__submit btn btn-primary" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer bg-dark text-white">
+    <div class="container">
+      <div class="footer__wrapper row text-center text-sm-left">
+        <div class="footer__nav col-12 col-sm-4">
+          <p class="footer__nav-title text-uppercase">Портфолио</p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 1</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 2</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 3</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 4</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contacts col-12 col-sm-4">
+          <p class="footer__contacts-title text-uppercase">Контакты</p>
+          <a class="footer__contacts-item" href="tel:84950000000">+7 495 000-0000</a>
+          <a class="footer__contacts-item" href="mailto:mail@mail.ru">mail@mail.ru</a>
+          <a class="footer__contacts-item" href="#"><span class="sr-only">Вконтакте</span></a>
+          <a class="footer__contacts-item" href="#"><span class="sr-only">Инстаграм</span></a>
+          <a class="footer__contacts-item" href="#"><span class="sr-only">Пинтерест</span></a>
+        </div>
+
+        <div class="footer__copy col-12 col-sm-4 text-sm-right">
+          <img class="footer__copy-img" src="img/svg/logo.svg" width="50" height="44" alt="Логотип">
+          <small class="footer__copy-text d-block">&copy; Творческая студия &laquo;Ничотак&raquo; во Владимире</small>
+          <a class="footer__copy-creator" href="https://liuminol.github.io">Сделано в <span>liuminol</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Подключение скриптов -->
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/popper.min.js"></script>
-
 </body>
 
 </html>

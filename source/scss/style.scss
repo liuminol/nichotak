@@ -1,7 +1,7 @@
 @import "variables";
 @import "scaffolding";
-@import "mixins";
+@import "extends";
 
-@import "blocks/";
+@import "blocks/main-nav.scss";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
