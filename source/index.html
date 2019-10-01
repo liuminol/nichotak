@@ -14,33 +14,48 @@
   <h1 class="heading sr-only">Ничотак</h1>
 
   <!-- Хедер -->
-  <header class="header">
+  <header class="header header--index-page">
 
     <!-- Навигация -->
-    <nav class="header__nav main-nav navbar navbar-expand-sm navbar-light">
+    <nav class="header__nav main-nav navbar navbar-expand-md navbar-light font-weight-bold">
       <div class="container">
         <a class="main-nav__logo navbar-brand mr-a">
           <img class="main-nav__logo-img" src="img/svg/logo.svg" alt="Ничотак" width="50" height="44">
         </a>
+
+        <p class="header__title d-md-none mb-0">Фотостудия</p>
 
         <button class="main-nav__toggler navbar-toggler border-0" type="button" data-toggle="collapse"
           data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="main-nav__toggler-icon navbar-toggler-icon"></span>
         </button>
 
-        <div class="main-nav__info collapse navbar-collapse flex-column-reverse align-items-end" id="navbarNav">
-          <ul class="main-nav__list navbar-nav">
+        <div class="main-nav__info collapse navbar-collapse flex-column-reverse align-items-end bg-sm-light"
+          id="navbarNav">
+          <ul class="main-nav__list navbar-nav flex-wrap">
             <li class="main-nav__item nav-item">
-              <a class="main-nav__link nav-link" href="#">Раздел 1</span></a>
+              <a class="main-nav__link nav-link text-dark" href="#">Жанровое фото</span></a>
             </li>
             <li class="main-nav__item nav-item">
-              <a class="main-nav__link nav-link" href="#">Раздел 2</a>
+              <a class="main-nav__link nav-link text-dark" href="#">Природа</a>
             </li>
             <li class="main-nav__item nav-item">
-              <a class="main-nav__link nav-link" href="#">Раздел 3</a>
+              <a class="main-nav__link nav-link text-dark" href="#">Макро</a>
             </li>
             <li class="main-nav__item nav-item">
-              <a class="main-nav__link nav-link" href="#">Раздел 4</a>
+              <a class="main-nav__link nav-link text-dark" href="#">Животные</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link text-dark" href="#">Портрет</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link text-dark" href="#">Архитектура</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link text-dark" href="#">Дети</a>
+            </li>
+            <li class="main-nav__item nav-item">
+              <a class="main-nav__link nav-link text-dark" href="#">Мероприятия</a>
             </li>
             <li class="main-nav__item nav-item">
               <a class="main-nav__link nav-link" href="#">О нас</a>
@@ -50,12 +65,12 @@
             </li>
           </ul>
 
-          <div class="main-nav__contacts navbar-nav d-none d-md-flex">
+          <div class="main-nav__contacts navbar-nav d-none d-lg-flex">
             <a class="main-nav__contacts-link nav-link" href="#"><span class="sr-only">Вконтакте</span></a>
             <a class="main-nav__contacts-link nav-link" href="#"><span class="sr-only">Инстаграм</span></a>
             <a class="main-nav__contacts-link nav-link" href="#"><span class="sr-only">Пинтерест</span></a>
-            <a class="main-nav__contacts-link nav-link" href="tel:84950000000"><span
-                class="text-primary font-weight-bold">Телефон</span> +7 495 000-0000</a>
+            <a class="main-nav__contacts-link nav-link text-dark" href="tel:84950000000"><span
+                class=" text-info font-weight-bold">Телефон</span> +7 495 000-0000</a>
           </div>
         </div>
       </div>
@@ -65,22 +80,22 @@
     <div id="controls" class="header__slider slider carousel slide" data-ride="carousel">
       <div class="slider-wrapper carousel-inner text-center">
         <div class="slider__slide slide carousel-item active">
-          <img class="slide__img d-block w-100" src="#" alt="Первый слайд">
-          <div class="carousel-caption d-none d-md-block">
+          <img class="slide__img d-block w-100" src="img/jpg/slider/1.jpg" alt="">
+          <div class="carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
         <div class="slider__slide slide carousel-item">
-          <img class="slide__img d-block w-100" src="#" alt="Второй слайд">
-          <div class="carousel-caption d-none d-md-block">
+          <img class="slide__img d-block w-100" src="img/jpg/slider/2.jpg" alt="">
+          <div class="carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
         <div class="slider__slide slide carousel-item">
-          <img class="slide__img d-block w-100" src="#" alt="Третий слайд">
-          <div class="slide__info carousel-caption d-none d-md-block">
+          <img class="slide__img d-block w-100" src="img/jpg/slider/3.jpg" alt="">
+          <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
@@ -119,19 +134,19 @@
       <div class="portfolio__list">
         <div class="portfolio__list-wrapper row no-gutters">
           <div class="portfolio__item col-12 col-sm-6 col-md-3">
-            <h3 class="portfolio__item-heading">Раздел 1</h3>
+            <h3 class="portfolio__item-heading">Жанровое фото</h3>
             <p class="portfolio__item-desc"></p>
           </div>
           <div class="portfolio__item col-12 col-sm-6 col-md-3">
-            <h3 class="portfolio__item-heading">Раздел 2</h3>
+            <h3 class="portfolio__item-heading">Природа</h3>
             <p class="portfolio__item-desc"></p>
           </div>
           <div class="portfolio__item col-12 col-sm-6 col-md-3">
-            <h3 class="portfolio__item-heading">Раздел 3</h3>
+            <h3 class="portfolio__item-heading">Макро</h3>
             <p class="portfolio__item-desc"></p>
           </div>
           <div class="portfolio__item col-12 col-sm-6 col-md-3">
-            <h3 class="portfolio__item-heading">Раздел 4</h3>
+            <h3 class="portfolio__item-heading">Животные</h3>
             <p class="portfolio__item-desc"></p>
           </div>
         </div>
@@ -173,10 +188,10 @@
         <div class="footer__nav col-12 col-sm-4">
           <p class="footer__nav-title text-uppercase">Портфолио</p>
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 1</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 2</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 3</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Раздел 4</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Жанровое фото</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Природа</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Макро</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Животные</a></li>
           </ul>
         </div>
 
@@ -184,6 +199,7 @@
           <p class="footer__contacts-title text-uppercase">Контакты</p>
           <a class="footer__contacts-item" href="tel:84950000000">+7 495 000-0000</a>
           <a class="footer__contacts-item" href="mailto:mail@mail.ru">mail@mail.ru</a>
+          <a class="footer__contacts-item" href="#">О нас</a>
           <a class="footer__contacts-item" href="#"><span class="sr-only">Вконтакте</span></a>
           <a class="footer__contacts-item" href="#"><span class="sr-only">Инстаграм</span></a>
           <a class="footer__contacts-item" href="#"><span class="sr-only">Пинтерест</span></a>

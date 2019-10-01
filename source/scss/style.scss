@@ -1,7 +1,10 @@
+@import "_custom";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 @import "variables";
 @import "scaffolding";
 @import "extends";
 
-@import "blocks/main-nav.scss";
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "blocks/main-nav";
+@import "blocks/slide";

@@ -1,3 +1,53 @@
 .navbar-light .main-nav__toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(14, 62, 108)' stroke-width='3' stroke-linecap='butt' stroke-miterlimit='10' d='M1 7h25M1 15h25M1 23h25'/%3e%3c/svg%3e") !important;
 }
+
+.main-nav__link {
+  transition: $transition;
+}
+
+@include media-breakpoint-up(sm) {
+
+  .main-nav__logo-img {
+    width: 60px;
+    height: 53px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  .main-nav {
+    background-color: #fff;
+  }
+
+  .main-nav__list {
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+
+  .main-nav__list {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .header--index-page .main-nav {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+
+  .main-nav__logo-img {
+    width: 84px;
+    height: 74px;
+  }
+}
