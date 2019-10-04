@@ -11,6 +11,10 @@
   color: $primary;
 }
 
+.slide__desc {
+  color: $dark;
+}
+
 @include media-breakpoint-up(sm) {
   .slide__heading {
     font-size: 1.6rem;

@@ -1,0 +1,18 @@
+.heading-decor {
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: bold;
+  color: $dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: $dark;
+  }
+}

@@ -38,3 +38,137 @@
     background-position: -15px -1px;
   }
 }
+
+.portfolio__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px !important;
+  min-height: 180px;
+  color: #fff;
+  background-color: $secondary;
+  transition: $transition;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: $transition;
+    z-index: 10;
+  }
+
+  &:hover::after {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &--genre {
+    background: url(../img/jpg/portfolio-menu/genre-desktop.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  &--nature {
+    background: url(../img/jpg/portfolio-menu/nature-desktop.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  &--macro {
+    background: url(../img/jpg/portfolio-menu/macro-desktop.jpg) center no-repeat;
+    background-size: cover;
+  }
+
+  &--animals {
+    background: url(../img/jpg/portfolio-menu/animals-desktop.jpg) center no-repeat;
+    background-size: cover;
+  }
+}
+
+.portfolio__item-heading {
+  font-weight: bold;
+  z-index: 20;
+}
+
+.portfolio__item-desc {
+  margin-bottom: 0;
+  z-index: 20;
+}
+
+@include media-breakpoint-up(sm) {
+
+  .portfolio__item {
+    min-height: 200px;
+  }
+
+  .portfolio__item-heading {
+    position: relative;
+    padding-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100px;
+      height: 2px;
+      background-color: #fff;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .portfolio__item {
+    justify-content: flex-start;
+    min-height: 300px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .portfolio__item {
+    flex-direction: column-reverse;
+    min-height: 400px;
+  }
+
+  .portfolio__item-heading {
+    padding-top: 15px;
+    transition: $transition;
+
+    &::before {
+      top: 0;
+      bottom: auto;
+      transition: $transition;
+    }
+  }
+
+  .portfolio__item-desc {
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition;
+  }
+
+  .portfolio__item:hover {
+
+    .portfolio__item-heading {
+      padding-bottom: 30px;
+      transition: $transition;
+
+      &::before {
+        top: 8px;
+      }
+    }
+
+    .portfolio__item-desc {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
