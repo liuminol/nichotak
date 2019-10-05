@@ -1,3 +1,8 @@
-//Кастомизация стилей bootstrap
+//Цвета
 $primary: #0e3e6c;
 $secondary: #99aacc;
+
+//Кнопки
+.btn {
+  border-radius: 0 !important;
+}
