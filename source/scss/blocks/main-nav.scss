@@ -6,6 +6,18 @@
   transition: $transition;
 }
 
+.main-nav__contacts-link {
+  transition: $transition;
+}
+
+.main-nav__contacts-link-icon {
+  transition: $transition;
+
+  &:hover {
+    fill: $primary;
+  }
+}
+
 @include media-breakpoint-up(sm) {
 
   .main-nav__logo-img {
@@ -41,13 +53,5 @@
     right: 0;
     left: 0;
     z-index: 500;
-  }
-}
-
-@include media-breakpoint-up(xl) {
-
-  .main-nav__logo-img {
-    width: 84px;
-    height: 74px;
   }
 }

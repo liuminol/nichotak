@@ -21,6 +21,21 @@
   }
 }
 
+.footer__contacts-link--social {
+  padding-right: 8px;
+  text-decoration: none;
+}
+
+
+.footer__contacts-link-icon {
+  fill: #fff;
+  transition: $transition;
+
+  &:hover {
+    fill: $secondary;
+  }
+}
+
 .footer__copy-creator {
   text-decoration: none;
   color: #fff;
@@ -41,7 +56,23 @@
 
 @include media-breakpoint-up(md) {
 
+  .footer__contacts {
+    padding-left: 40px;
+  }
+
   .footer__contacts-link {
     padding-bottom: 5px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .footer__contacts {
+    padding-left: 100px;
+  }
+
+  .footer__copy-img {
+    width: 60px;
+    height: 53px;
   }
 }

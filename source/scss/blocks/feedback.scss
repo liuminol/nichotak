@@ -1,3 +1,9 @@
+.feedback {
+  background: url(../img/png/camera-mobile.png) no-repeat;
+  background-position: 85% 20%;
+  background-attachment: fixed;
+}
+
 .feedback__heading {
   color: #fff;
 
@@ -6,3 +12,10 @@
   }
 }
 
+@include media-breakpoint-up(lg) {
+
+  .feedback {
+    background-image: url(../img/png/camera-desktop.png);
+    background-position: 90% 15%;
+  }
+}
