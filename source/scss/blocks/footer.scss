@@ -21,6 +21,10 @@
   }
 }
 
+.footer__contacts-link--disabled {
+  color: darken($light, 15%) !important;
+}
+
 .footer__contacts-link--social {
   padding-right: 8px;
   text-decoration: none;
