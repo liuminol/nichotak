@@ -1,0 +1,155 @@
+.photo__heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.photo__heading {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: fadeInLeft 1s;
+
+  &::before {
+    width: 200px;
+    height: 4px;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  };
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.photo__sizer,
+.photo__item {
+  width: 100%;
+}
+
+.photo__item-preview {
+  transition: $transition;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.photo {
+  background-color: $secondary;
+
+  &--genre {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/genre/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: #fff;
+
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &--nature {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/nature/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: $primary;
+
+      &::before {
+        background-color: $primary;
+      }
+    }
+  }
+
+  &--macro {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/macro/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: #fff;
+
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &--animals {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/animals/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: #fff;
+
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+  .photo__sizer,
+  .photo__item {
+    width: 50%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .photo {
+    .photo__heading-wrapper {
+      background-attachment: fixed;
+    }
+
+    &--genre {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/genre/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--nature {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/nature/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--macro {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/macro/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--animals {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/animals/heading-bg-desktop.jpg);
+      }
+    }
+  }
+
+  .photo__sizer,
+  .photo__item {
+    width: 25%;
+  }
+}

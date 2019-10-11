@@ -35,6 +35,24 @@
   }
 }
 
+
+@include media-breakpoint-up(md) {
+
+  .main-nav__link.active {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: 0;
+      height: 1px;
+      background-color: $primary;
+    }
+  }
+}
+
 @include media-breakpoint-down(sm) {
 
   .main-nav {

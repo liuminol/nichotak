@@ -67,26 +67,26 @@
   }
 
   &:hover::after {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   &--genre {
-    background: url(../img/jpg/portfolio-menu/genre-desktop.jpg) center no-repeat;
+    background: $secondary url(../img/jpg/portfolio-menu/genre-mobile.jpg) center no-repeat;
     background-size: cover;
   }
 
   &--nature {
-    background: url(../img/jpg/portfolio-menu/nature-desktop.jpg) center no-repeat;
+    background: $secondary url(../img/jpg/portfolio-menu/nature-mobile.jpg) center no-repeat;
     background-size: cover;
   }
 
   &--macro {
-    background: url(../img/jpg/portfolio-menu/macro-desktop.jpg) center no-repeat;
+    background: $secondary url(../img/jpg/portfolio-menu/macro-mobile.jpg) center no-repeat;
     background-size: cover;
   }
 
   &--animals {
-    background: url(../img/jpg/portfolio-menu/animals-desktop.jpg) center no-repeat;
+    background: $secondary url(../img/jpg/portfolio-menu/animals-mobile.jpg) center no-repeat;
     background-size: cover;
   }
 }
@@ -128,6 +128,22 @@
   .portfolio__item {
     justify-content: flex-start;
     min-height: 300px;
+
+    &--genre {
+      background-image: url(../img/jpg/portfolio-menu/genre-desktop.jpg);
+    }
+
+    &--nature {
+      background-image: url(../img/jpg/portfolio-menu/nature-desktop.jpg);
+    }
+
+    &--macro {
+      background-image: url(../img/jpg/portfolio-menu/macro-desktop.jpg);
+    }
+
+    &--animals {
+      background-image: url(../img/jpg/portfolio-menu/animals-desktop.jpg);
+    }
   }
 }
 
