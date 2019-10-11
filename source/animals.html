@@ -8,7 +8,6 @@
   <title>Портфолио - животные</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/lightgallery.min.css">
-  <link rel="stylesheet" href="css/lg-transitions.min.css">
 </head>
 
 <body>
@@ -108,7 +107,6 @@
       </div>
 
       <div class="photo__list masonry" id="lightgallery">
-        <div class="photo__sizer"></div>
         <a class="photo__item" href="img/jpg/portfolio/animals/1.jpg">
           <img class="photo__item-preview" src="img/jpg/portfolio/animals/preview/1.jpg" alt="">
         </a>
@@ -221,9 +219,7 @@
 
   <script>
     $(document).ready(function () {
-      $("#lightgallery").lightGallery({
-        mode: 'lg-fade'
-      });
+      $("#lightgallery").lightGallery();
     });
 
   </script>
@@ -234,7 +230,6 @@
   <script>
     $('.masonry').masonry({
       // options
-      columnWidth: '.photo__sizer',
       itemSelector: '.photo__item',
       percentPosition: true
     });
