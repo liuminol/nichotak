@@ -146,8 +146,7 @@
                 class="footer__nav-link">Животные</a></li>
             <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="portrait.html"
                 class="footer__nav-link">Портрет</a></li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a
-                class="footer__nav-link">Архитектура</a>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a class="footer__nav-link">Архитектура</a>
             </li>
             <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="children.html"
                 class="footer__nav-link">Дети</a></li>
@@ -196,6 +195,22 @@
   <!-- popper -->
   <script src="js/popper.min.js"></script>
 
+  <!-- masonry -->
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+
+  <script>
+    var $grid = $('.masonry').imagesLoaded(function () {
+      // init Masonry after all images have loaded
+      $grid.masonry({
+        // options
+        itemSelector: '.photo__item',
+        percentPosition: true
+      });
+    });
+
+  </script>
+
   <!-- lightgallery -->
   <script src="js/lightgallery.min.js"></script>
   <script src="js/lg-thumbnail.min.js"></script>
@@ -206,18 +221,6 @@
       $("#lightgallery").lightGallery({
         mode: 'lg-fade'
       });
-    });
-
-  </script>
-
-  <!-- masonry -->
-  <script src="js/masonry.pkgd.min.js"></script>
-
-  <script>
-    $('.masonry').masonry({
-      // options
-      itemSelector: '.photo__item',
-      percentPosition: true
     });
 
   </script>
