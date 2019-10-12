@@ -91,11 +91,68 @@
         background-color: #fff;
       }
     }
+
   }
 
   &--animals {
     .photo__heading-wrapper {
       background-image: url(../img/jpg/portfolio/animals/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: #fff;
+
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &--portrait {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/portrait/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: $dark;
+
+      &::before {
+        background-color: $dark;
+      }
+    }
+  }
+
+  &--architecture {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/architecture/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: $gray-600;
+
+      &::before {
+        background-color: $gray-600;
+      }
+    }
+  }
+
+  &--children {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/children/heading-bg-mobile.jpg);
+    }
+
+    .photo__heading {
+      color: #fff;
+
+      &::before {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &--event {
+    .photo__heading-wrapper {
+      background-image: url(../img/jpg/portfolio/event/heading-bg-mobile.jpg);
     }
 
     .photo__heading {
@@ -144,6 +201,30 @@
     &--animals {
       .photo__heading-wrapper {
         background-image: url(../img/jpg/portfolio/animals/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--portrait {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/portrait/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--architecture {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/architecture/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--children {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/children/heading-bg-desktop.jpg);
+      }
+    }
+
+    &--event {
+      .photo__heading-wrapper {
+        background-image: url(../img/jpg/portfolio/event/heading-bg-desktop.jpg);
       }
     }
   }
