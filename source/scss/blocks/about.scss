@@ -17,6 +17,9 @@
   border-radius: 50%;
 }
 
+.about__desc {
+  width: inherit; //в ie 11 показ на ширину родителя
+}
 
 @include media-breakpoint-up(md) {
 
