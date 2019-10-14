@@ -7,6 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Творческая студия "Ничотак"</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- picturefill -->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -79,27 +87,40 @@
     <!-- Слайдер -->
     <div id="controls" class="header__slider slider carousel slide" data-ride="carousel">
       <div class="slider-wrapper carousel-inner text-center">
+
         <div class="slider__slide slide carousel-item active">
-          <img class="slide__img d-block w-100" src="img/jpg/slider/1.jpg" alt="">
+          <picture>
+            <source srcset="img/jpg/slider/1-desktop.jpg" media="(min-width: 768px)">
+            <img class="slide__img d-block w-100" src="img/jpg/slider/1-mobile.jpg" alt="">
+          </picture>
           <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
+
         <div class="slider__slide slide carousel-item">
-          <img class="slide__img d-block w-100" src="img/jpg/slider/2.jpg" alt="">
+          <picture>
+            <source srcset="img/jpg/slider/2-desktop.jpg" media="(min-width: 768px)">
+            <img class="slide__img d-block w-100" src="img/jpg/slider/2-mobile.jpg" alt="">
+          </picture>
           <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
+
         <div class="slider__slide slide carousel-item">
-          <img class="slide__img d-block w-100" src="img/jpg/slider/3.jpg" alt="">
+          <picture>
+            <source srcset="img/jpg/slider/3-desktop.jpg" media="(min-width: 768px)">
+            <img class="slide__img d-block w-100" src="img/jpg/slider/3-mobile.jpg" alt="">
+          </picture>
           <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
+
       </div>
       <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -121,11 +142,17 @@
 
         <!-- Особенности портфолио -->
         <div class="portfolio__feature row py-5 pl-4 pl-md-0">
-          <div class="portfolio__feature-text portfolio__feature-text--camera col-12 col-md-6 col-lg-4 pl-5 py-3 pr-xl-5">Не просто делаем красивые снимки. За каждой нашей
+          <div
+            class="portfolio__feature-text portfolio__feature-text--camera col-12 col-md-6 col-lg-4 pl-5 py-3 pr-xl-5">
+            Не просто делаем красивые снимки. За каждой нашей
             фотографией история</div>
-          <div class="portfolio__feature-text portfolio__feature-text--brush col-12 col-md-6 col-lg-4 pl-5 py-3 pr-xl-5">Работаем с моделями, визажистами и стилистами на
+          <div
+            class="portfolio__feature-text portfolio__feature-text--brush col-12 col-md-6 col-lg-4 pl-5 py-3 pr-xl-5">
+            Работаем с моделями, визажистами и стилистами на
             TFP-условиях с возможностью дальнейшего сотрудничества</div>
-          <div class="portfolio__feature-text portfolio__feature-text--recovery col-12 col-md-6 col-lg-4 pl-5 py-3 pr-xl-5">Предлагаем профессиональную ретушь ваших фото,
+          <div
+            class="portfolio__feature-text portfolio__feature-text--recovery col-12 col-md-6 col-lg-4 pl-5 py-3 pr-xl-5">
+            Предлагаем профессиональную ретушь ваших фото,
             восстановление старых снимков, реколор черно-белых изображений</div>
         </div>
       </div>
