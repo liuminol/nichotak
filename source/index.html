@@ -209,24 +209,24 @@
     <section class="feedback bg-secondary">
       <h2 class="feedback__heading heading-decor text-center">Свяжитесь с нами</h2>
 
-      <form class="feedback__form form container text-white py-3" action="#">
+      <form class="feedback__form form container text-white py-3" action="php/mail.php" method="POST">
         <div class="form__item form-group">
           <label for="inputName">Имя *</label>
-          <input class="form-control" id="inputName" type="text" required>
+          <input class="form-control" id="inputName" type="text" name="name" required>
         </div>
         <div class="form-row">
           <div class="form__item form-group col-12 col-sm-6">
             <label for="inputEmail">E-mail *</label>
-            <input class="form-control" id="inputEmail" type="email" required>
+            <input class="form-control" id="inputEmail" type="email" name="email" required>
           </div>
           <div class="form__item form-group col-12 col-sm-6">
             <label for="inputTel">Телефон</label>
-            <input class="form-control" id="inputTel" type="tel">
+            <input class="form-control" id="inputTel" type="tel" name="tel">
           </div>
         </div>
         <div class="form__item form-group">
           <label for="feedbackTextarea">Сообщение *</label>
-          <textarea class="form-control" id="feedbackTextarea" rows="4" required></textarea>
+          <textarea class="form-control" id="feedbackTextarea" rows="4" name="message" required></textarea>
         </div>
         <button class="form__submit btn btn-primary" type="submit">Отправить</button>
       </form>
@@ -281,7 +281,7 @@
 
         <div class="footer__copy col-12 col-sm-4 text-sm-right py-3">
           <img class="footer__copy-img" src="img/svg/logo.svg" width="50" height="44" alt="Логотип">
-          <small class="footer__copy-text d-block pt-3">&copy; Творческая студия &laquo;Ничотак&raquo; во
+          <small class="footer__copy-text d-block pt-3">&copy; <span class="footer__copy-year"></span> Творческая студия &laquo;Ничотак&raquo; во
             Владимире</small>
           <a class="footer__copy-creator" href="https://liuminol.github.io">Сделано в <span>liuminol</span></a>
         </div>
@@ -290,9 +290,17 @@
   </footer>
 
   <!-- Подключение скриптов -->
+  <!-- jquery -->
   <script src="js/jquery.slim.min.js"></script>
+
+  <!-- bootstrap -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- popper -->
   <script src="js/popper.min.js"></script>
+
+  <!-- запись текущего года в блоке копирайта -->
+  <script src="js/year.js"></script>
 </body>
 
 </html>
