@@ -7,6 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Творческая студия "Ничотак"</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- picturefill -->
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -103,27 +111,40 @@
     <!-- Слайдер -->
     <div id="controls" class="header__slider slider carousel slide" data-ride="carousel">
       <div class="slider-wrapper carousel-inner text-center">
+
         <div class="slider__slide slide carousel-item active">
-          <img class="slide__img d-block w-100" src="img/jpg/slider/1.jpg" alt="">
+          <picture>
+            <source srcset="img/jpg/slider/1-desktop.jpg" media="(min-width: 768px)">
+            <img class="slide__img d-block w-100" src="img/jpg/slider/1-mobile.jpg" alt="">
+          </picture>
           <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc text-dark">Описание слайда</p>
           </div>
         </div>
+
         <div class="slider__slide slide carousel-item">
-          <img class="slide__img d-block w-100" src="img/jpg/slider/2.jpg" alt="">
+          <picture>
+            <source srcset="img/jpg/slider/2-desktop.jpg" media="(min-width: 768px)">
+            <img class="slide__img d-block w-100" src="img/jpg/slider/2-mobile.jpg" alt="">
+          </picture>
           <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
+
         <div class="slider__slide slide carousel-item">
-          <img class="slide__img d-block w-100" src="img/jpg/slider/3.jpg" alt="">
+          <picture>
+            <source srcset="img/jpg/slider/3-desktop.jpg" media="(min-width: 768px)">
+            <img class="slide__img d-block w-100" src="img/jpg/slider/3-mobile.jpg" alt="">
+          </picture>
           <div class="slide__info carousel-caption">
             <h2 class="slide__heading">Название слайда</h2>
             <p class="slide__desc">Описание слайда</p>
           </div>
         </div>
+
       </div>
       <a class="carousel-control-prev" href="#controls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -219,16 +240,24 @@
         <div class="footer__nav col-12 col-sm-4 py-3">
           <p class="footer__nav-title text-uppercase">Портфолио</p>
           <ul class="footer__nav-list row">
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="genre.html" class="footer__nav-link">Жанровое фото</a>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="genre.html" class="footer__nav-link">Жанровое
+                фото</a>
             </li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="nature.html" class="footer__nav-link">Природа</a></li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="macro.html" class="footer__nav-link">Макро</a></li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="animals.html" class="footer__nav-link">Животные</a></li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="portrait.html" class="footer__nav-link">Портрет</a></li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="architecture.html" class="footer__nav-link">Архитектура</a>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="nature.html"
+                class="footer__nav-link">Природа</a></li>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="macro.html"
+                class="footer__nav-link">Макро</a></li>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="animals.html"
+                class="footer__nav-link">Животные</a></li>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="portrait.html"
+                class="footer__nav-link">Портрет</a></li>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="architecture.html"
+                class="footer__nav-link">Архитектура</a>
             </li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="children.html" class="footer__nav-link">Дети</a></li>
-            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="event.html" class="footer__nav-link">Мероприятия</a>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="children.html"
+                class="footer__nav-link">Дети</a></li>
+            <li class="footer__nav-item col-6 col-sm-12 col-lg-6"><a href="event.html"
+                class="footer__nav-link">Мероприятия</a>
             </li>
           </ul>
         </div>
