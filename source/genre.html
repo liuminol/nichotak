@@ -102,11 +102,28 @@
   <main class="main">
 
     <section class="photo photo--genre">
+
       <div class="photo__heading-wrapper">
         <h1 class="photo__heading photo__heading heading-decor">Жанровое фото</h1>
       </div>
 
       <div class="photo__list masonry" id="lightgallery">
+
+        <!-- прелоадер -->
+        <div class="photo__preloader preloader">
+          <div class="preloader__wrapper">
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+            <div class="preloader__box"></div>
+          </div>
+        </div>
+
         <a class="photo__item" href="img/jpg/portfolio/genre/1.jpg">
           <img class="photo__item-preview" src="img/jpg/portfolio/genre/preview/1.jpg" alt="">
         </a>
@@ -219,7 +236,8 @@
 
         <div class="footer__copy col-12 col-sm-4 text-sm-right py-3">
           <img class="footer__copy-img" src="img/svg/logo.svg" width="50" height="44" alt="Логотип">
-          <small class="footer__copy-text d-block pt-3">&copy; <span class="footer__copy-year"></span> Творческая студия &laquo;Ничотак&raquo; во
+          <small class="footer__copy-text d-block pt-3">&copy; <span class="footer__copy-year"></span> Творческая студия
+            &laquo;Ничотак&raquo; во
             Владимире</small>
           <a class="footer__copy-creator" href="https://liuminol.github.io">Сделано в <span>liuminol</span></a>
         </div>
@@ -246,6 +264,8 @@
   <script>
     var $grid = $('.masonry').imagesLoaded(function () {
       // init Masonry after all images have loaded
+      $('.preloader').hide();
+
       $grid.masonry({
         // options
         itemSelector: '.photo__item',
