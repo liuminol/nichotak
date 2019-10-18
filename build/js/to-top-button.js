@@ -1,0 +1,1 @@
+"use strict";!function(){var t=document.querySelector(".to-top-button"),o=function(){0<window.pageYOffset&&(window.scrollBy(0,-30),setTimeout(o,3))};document.addEventListener("scroll",function(){500<window.pageYOffset?t.classList.add("to-top-button--isShow"):t.classList.remove("to-top-button--isShow")}),t.addEventListener("click",o)}();

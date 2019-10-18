@@ -1,0 +1,1 @@
+"use strict";!function(){var e=(new Date).getFullYear();document.querySelector(".footer__copy-year").textContent=e}();
