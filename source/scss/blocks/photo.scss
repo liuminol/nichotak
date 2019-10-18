@@ -1,3 +1,7 @@
+.photo {
+  position: relative;
+}
+
 .photo__heading-wrapper {
   display: flex;
   justify-content: center;
@@ -33,10 +37,6 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-}
-
-.photo__list {
-  position: relative;
 }
 
 .photo__item {
